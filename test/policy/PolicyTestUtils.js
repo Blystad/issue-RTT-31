@@ -77,7 +77,7 @@ function policyTestCase(Component, values, func, options = {}) {
     // missing event handling. (i.e. ref is set, but not from expanding the fields.
     _.keys(values).forEach((item) => {
       it(`should contain a input field named ${item}`, () => {
-        expect(root().get(item)).to.exist;
+        expect(root().get(item), item).to.exist;
       });
 
       it(`${item} should call onChange, when changed`, () => {
