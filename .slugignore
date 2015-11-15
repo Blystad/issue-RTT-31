@@ -1,0 +1,8 @@
+/node_modules
+/src
+/test
+/live_templates
+/coverage
+/webpack
+dev-server.js
+karma.config.js

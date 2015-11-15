@@ -1,0 +1,41 @@
+{
+  "extends": "eslint-config-airbnb",
+
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-trailing-spaces": 0,
+    "id-length": 0,
+
+    "react/sort-comp": [2, {         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
+      "order": [
+        "displayName",
+        "propTypes",
+        "contextTypes",
+        "childContextTypes",
+        "mixins",
+        "statics",
+        "defaultProps",
+        "constructor",
+        "getDefaultProps",
+        "getInitialState",
+        "getChildContext",
+        "componentWillMount",
+        "componentDidMount",
+        "componentWillReceiveProps",
+        "shouldComponentUpdate",
+        "componentWillUpdate",
+        "componentDidUpdate",
+        "componentWillUnmount",
+        "/^on.+$/",
+        "/^get.+$/",
+        "/^is.+$/",
+        "/^has.+$/",
+        "/^render.+$/",
+        "render"
+      ]
+    }],
+    "react/jsx-boolean-value": 0,
+
+    "new-cap": [2, { "capIsNewExceptions": ["List","Map"] }]
+  }
+}
