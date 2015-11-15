@@ -15,9 +15,9 @@ policyTestCase(SIPServerCustom, values, (context) => {
 
   it('should require that sipServerName is specified', () => {
     render({ sipServerName: '' });
-    expect(root().sipServerName).to.not.validate();
+    expect(root().get('sipServerName')).to.not.validate();
 
     render({ sipServerName: 'asdkwad' });
-    expect(root().sipServerName).to.validate();
+    expect(root().get('sipServerName')).to.validate();
   });
 }, { props: { server: 'custom' } });
