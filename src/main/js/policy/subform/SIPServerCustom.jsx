@@ -12,10 +12,9 @@ const policyConfig = {
 class SIPServerCustom extends React.Component {
   render() {
     const { sipServerName, sipServerAddress } = this.props.fields;
-
     return (
       <div>
-        <Input type="text" {...sipServerName} label="Server Name" />
+        <Input type="text" {...sipServerName} label="Server Name" wrapperClassName="col-xs-10" labelClassName="col-xs-2" />
         <Input type="text" {...sipServerAddress} label="Server Address" />
       </div>
     );

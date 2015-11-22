@@ -60,8 +60,8 @@ export default function decorate(option) {
       render() {
         return (
           <Component
-            testRef="IC"
             {...this.props}
+            testRef="IC"
             fields={this.getFields()}
             policyId={this.props.policyId}
           />);
